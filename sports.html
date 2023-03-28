@@ -1,0 +1,190 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webpage</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                transition: .3s linear;
+                text-decoration: none;
+                text-transform: capitalize;
+                
+      
+            }
+            .outer{
+                background-image: url(bg11.jpg);
+                background-repeat: none;
+                background-size: cover;
+                background-position: right;
+            }
+            .main_main{
+                padding: 2rem 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .outer h1{
+                color: whitesmoke;
+                font-size: 40px;
+                text-align: center;
+                padding: 2rem;
+            }
+            .outer h1 span{
+                color: red;
+            }
+            .main_outer{
+                flex: 1 1 300px;
+
+            }
+            .main_outer h2, p{
+                text-align: center;
+            }
+            .main_outer h2{
+                font-size: 30px;
+                padding: 1rem;
+                color: orange;
+
+            }
+            .main_outer p{
+                font-size: 1.7rem;
+                padding: 2rem;
+                color: aquamarine;
+
+            }
+            .main_outer img{
+                width: 100%;
+            }
+            .slider-frame{
+                overflow: hidden;
+                height: 400px;
+                width: 1100px;
+                margin-left: 210px;
+                margin-top: 20px;
+                box-shadow: 1px 2px 10px 5px white;
+            }
+
+            @-webkit-keyframes slide_animation{
+                0% {left:0px;}
+                10% {left:0px;}
+                20% {left:1200px;} 
+                30% {left:1200px;}
+                40% {left:2400px;}
+                50% {left:2400px;}
+                60% {left:1200px;}
+                70% {left:1200px;}
+                80% {left:0px;}
+                90% {left:0px;}
+                100% {left:0px;}
+            }
+            .slide-images{
+                width: 360px;
+                height: 80px;
+                margin: 0 0 0 -2400px;
+                position: relative;
+                -webkit-animation-name: slide_animation;
+                -webkit-animation-duration: 10s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-play-state: running;
+            }
+            .img-container{
+                height: 400px;
+                width: 1100px;
+                position: relative;
+                float: left;
+            }
+            .shine {
+                animation: shine 1s infinite;
+                }
+
+                @keyframes shine {
+                0% {
+                    color: orange;
+                    text-shadow: 0 0 5px orange;
+                }
+                50% {
+                    color: #fff;
+                    text-shadow: 0 0 10px orange;
+                }
+                100% {
+                    color: orange;
+                    text-shadow: 0 0 5px orangered;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="outer">
+           <p class="shine">Welcome to Our</p> 
+           <h1>Various <span>SPORTS </span>Occasion</span></h1>
+            
+            <div class="slider-frame">
+                <div class="slide-images">
+                    <div class="img-container">
+                        <img src="m.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="m.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="m.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="m.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="main_main">
+                <div class="main_outer">
+                    <img src="r.jpg">
+                    <h2>Bull Fights</h2>
+                    <p>Enjoy various bull fighting in around areas</p>
+                </div>
+                <div class="main_outer">
+                    <img src="q.jpg">
+                    <h2>Arena bull fights</h2>
+                    <p>major famous fights in our arena</p>
+                </div>
+                <div class="main_outer">
+                    <img src="s.jpg">
+                    <h2>black bull</h2>
+                   
+                </div>
+                <div class="main_outer">
+                    <img src="v.jpg">
+                    <h2>cultural dance</h2>
+                   
+                </div>
+                <div class="main_outer">
+                    <img src="z.jpg">
+                    <h2>couple dances</h2>
+                    
+                </div>
+                <div class="main_outer">
+                    <img src="f.jpg">
+                    <h2>Traditional games</h2>
+                    
+                </div>
+                
+               
+            <div class="main_outer">
+                <img src="m.jpg">
+                <h2>Elephant ride</h2>
+                <p>most people play around with the elephants and their ride</p>
+            </div>
+           
+
+            </div>
+           
+        </div>
+    
+    </body>
+    </html>

@@ -1,0 +1,185 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Booking</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;       
+            }
+            h1{
+                color: orange;
+                margin-left: 150px;
+                margin-top: 150px;
+                font-size: 60px;
+            }
+            body{
+                background-image: url(bg11.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            #form{
+                background-color: #000;
+                height: 400px;
+                width: 800px;
+                margin: auto;
+                margin-top: 100px;
+                opacity: 0.7;
+            }
+            #first-group{
+                border: 2px solid orange;
+                width: 400px;
+                margin-top: 38px;
+                position: absolute;
+            }
+            #content{
+                border: 1px solid #fff;
+                margin: 10px;
+                margin-left: 8px;
+                padding: 5px;
+            }
+            #content #input-group{
+                border: none;
+                outline: none;
+                background: transparent;
+                margin-left: 8px;
+                width: 300px;
+                color: #fff;
+            } 
+            ::placeholder{
+                color: orange;
+
+            }
+            .fa{
+                display: inline-block;
+                color: orangered;
+                border-right: 2px solid #fff;
+                padding: 8px;
+                margin-left: 8px;
+
+            }
+            #second-group{
+                border: 2px solid orange;
+                width: 400px;
+                margin-top: 38px;
+                margin-left: 400px;
+
+            }
+            #submit-btn{
+                margin-top: 30px;
+                margin-left: 600px;
+                background: transparent;
+                color: #fff;
+                width: 150px;
+                border: 2px solid greenyellow;
+                outline: none;
+                padding: 10px 25px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            #submit-btn:hover{
+                background:green ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-group">
+                <div id="form">
+                    <h1 class="text-white text-center">HOTEL BOOKING</h1>
+
+                       <div id="first-group">
+
+                                <div id="content">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <input  type="text" id="input-group" placeholder="First Name"> 
+                                </div>
+
+                                        <div id="content">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <input type="number" id="input-group" placeholder="Phone Number"> 
+                                    </div>
+                                        <div id="content">
+                                            <i class="fa fa-calender" aria-hidden="true"></i>
+                                            <input type="text" id="input-group" placeholder="Arrival Date"> 
+                                        </div>
+                                    <div id="content">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                            <select id="input-group" style="background-color: black;">
+                                                <option value="">No. of Guests</option>
+                                                <option value="">1-5</option>
+                                                <option value="">6-10</option>
+                                                <option value="">11-20</option>
+                                                <option value="">21-30</option>
+                                                <option value="">31-50</option>
+                                                <option value="">over 50</option>
+                                            </select>
+                                    </div>
+                                    <div id="content">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                            <select id="input-group" style="background-color: black;">
+                                                <option value="">Treament Level</option>
+                                                <option value="">Luxury</option>
+                                                <option value="">Mid-range </option>
+                                                <option value="">Budget</option>
+                                            </select>
+                                    </div>
+                        </div>
+
+                   <div id="second-group">
+                       <div id="content">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input  type="text" id="input-group" placeholder="Last Name"> 
+                       </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input  type="email" id="input-group" placeholder="Email"> 
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input  type="text" id="input-group" placeholder="Departure Date"> 
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    <select id="input-group"| style="background-color: black;">
+                        <option value="">Room Type</option>
+                        <option value="">AC</option>
+                        <option value="">Non-AC</option>
+                        <option value="">Single Bed</option>
+                        <option value="">Double Bed</option>
+                    </select>
+                  </div>
+                  <div id="content">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value="">Hotel Name</option>
+                            <option value="">Mirina Bay Sands Hote;</option>
+                            <option value="">Atlantis Palm Hotel</option>
+                            <option value="">Ritz-Carlton Hotel</option>
+                            <option value="">Sacher Vienna Hotel</option>
+                            <option value="">Claridge's Hotel</option>
+                            <option value="">Brown's Hotel</option>
+                            <option value="">Copacabana Hotel</option>
+                            <option value="">The Brando Hotel</option>
+                            <option value="">Nayara Springs Hotel</option>
+                            <option value="">Tydis Hotel</option>
+                            <option value="">Mara Point Hotel</option>
+                            <option value="">Hell's Gate Hote</option>
+                            <option value="">Dream Catcher Hotel</option>
+                            <option value="">Capital Hill Hotel</option>
+                        </select>
+                </div>
+                  </div>
+                  <button type="submit" value="Submit" id="submit-btn"><a href="Thank you.html">Book Now</a></button>
+                
+                </div>
+            </form>
+        </div>
+        
+    </body>
+    </html>

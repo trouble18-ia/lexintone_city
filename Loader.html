@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loading Animation</title>
+    <style>
+      *, *::after, *::before{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background: linear-gradient(orange, black, white, white, black, orange);
+      }
+      body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .base{
+        height: 250px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: center;
+      }
+      .dot{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(94, 38, 38);
+        border-radius: 50%;
+        opacity: 1;
+        position: absolute;
+        left: calc(50% + var(--x));
+        top: calc(50% + var(--y));
+      }
+      .one{
+        --x : -90px;
+        --y : -90px;
+        --tx : 130px;
+        animation: slide14 4s ease-in-out forwards infinite;
+      }
+      .two{
+        --x : 40px;
+        --y : -90px;
+        --tx : -130px;
+        --ty : 130px;
+        opacity: 0;
+        animation: slide23 4s ease-in-out forwards infinite;
+      }
+      .three{
+        --x : -90px;
+        --y : 40px;
+        --tx : 130px;
+        --ty : -130px;
+        opacity: 0;
+        animation: slide23 4s ease-in-out forwards infinite;
+      }
+      .four{
+        --x : 40px;
+        --y : 40px;
+        --tx : -130px;
+        animation: slide14 4s ease-in-out forwards infinite;
+      }
+      @keyframes slide14{
+        25%{
+          transform: translateX(var(--tx));
+          opacity: 0;
+        }
+        50%{
+          transform: translateX(var(--tx)) translateY(var(--tx)) ;
+          opacity: 1;
+        }
+        75%{
+          transform: translateX(0px) translateY(var(--tx));
+          opacity: 0;
+        }
+        100%{
+          transform: translateX(0px) translateY(0px) ;
+          opacity: 1;
+        }
+      }
+      @keyframes slide23{
+        25%{
+          transform: translateY(var(--ty));
+          opacity: 1;
+        }
+        50%{
+          transform: translateX(var(--tx)) translateY(var(--ty));
+          opacity: 0;
+        }
+        75%{
+          transform: translateX(var(--tx)) translateY(0px);
+          opacity: 1;
+        }
+        100%{
+          transform: translateX(0px) translateY(0px) ;
+          opacity: 0;
+        }
+      }
+    .yt{
+      height : 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+     }
+    .yt > a{
+      display : flex;
+      align-items : center;
+      text-decoration : none;
+      color : white;
+      font-size : 1.2em;
+      border-radius: 5px;
+      padding: 0.4em 1em;
+      background-color: red;
+    }
+    button{
+            color: #f2ece3;
+            padding: 10px 25px;
+            background: maroon;
+            border: 1px solid #e8e5e1;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background: orange;
+        }
+        .lay{
+         background: transparent;
+         text-align: center;
+         display: block;
+        
+        }
+        .doubt{
+          background: rgba(0, 0, 0, 0.5);
+        }
+      
+   
+    </style>
+  </head>
+  <body>
+    <div class="doubt">
+    <div class="base">
+      <div class="dot one"></div>
+      <div class="dot two"></div>
+      <div class="dot three"></div>
+      <div class="dot four"></div>
+    </div>
+    <div class="lay">
+      <a href="wildlife_2.html"><button>Wildlife</button></a>
+      <a href="culture.html"><button>Culture</button></a>
+      <a href="Lakes.html"><button>Lake</button></a>
+      <a href="Museum.html"><button>Museum</button></a>
+      <a href="volcanic.html"><button>Volcano</button></a>
+      <a href="forests.html"><button>Forest</button></a>
+      <a href="mountain.html"><button>Mountain</button></a>
+      <a href="mining.html"><button>Mines</button></a>
+      <a href="depression.html"><button>Depression </button></a>
+      <a href="waterfall.html"><button>Waterfall</button></a>
+      <a href="camping.html"><button>Camping</button></a>
+      <a href="city.html"><button>City</button></a>
+      <a href="beach.html"><button>Beach</button></a>
+      <a href="sports.html"><button>Sport</button></a>
+      <a href="Historical sites.html"><button>Historical Site</button></a>
+      <a href="Bouncing castle.html"><button>Bouncing castle</button></a>
+   </div> 
+   </div>
+  </body>
+</html>

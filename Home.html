@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            text-align: center;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(bg11.jpg);
+            background-size: cover;
+
+        }
+        h2{
+            position: relative;
+            font-size: 5vw;
+            color: rgba(0,0,0,0.5);
+            -webkit-text-stroke: 0.2vw #383d52;
+            text-transform: uppercase;
+        }
+        h2::before{
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: orange;
+            -webkit-text-stroke: 0vw #383d52;
+            border-right:2px solid red ;
+            overflow: hidden;
+            animation: animate 10s linear infinite;
+        }
+
+        @keyframes animate
+        {
+            0%,10%,100%
+            {
+                width: 0;
+            }
+            70%,90%
+            {
+                width: 100%;
+            }
+        }
+        h3{
+            color: red;
+            font-size: 20px;
+        }
+        .data{
+            align-self: normal;
+        }
+        button{
+            color: #f2ece3;
+            padding: 10px 25px;
+            background: transparent;
+            border: 1px solid #e8e5e1;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+            margin-top: 150px;
+        }
+        button:hover{
+            background: orange;
+        }
+        form{
+            width: 600px;
+            height: 55px;
+            display: flex;
+            margin-left: 200px;
+            border: #d57703;
+            margin-top: 30px;
+        }
+        form input{
+            flex: 1;
+            border: none;
+            outline: none;
+            background-color: antiquewhite;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration-color: #c2760b;
+        
+        }
+        form button{
+            background-color: gray;
+            padding: 10px 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            letter-spacing: 1px;
+            cursor: pointer;
+            align-self: center;
+            margin-top: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="search">
+                    <form>
+                        <input type="text" placeholder="You lost for real, What are you looking for?">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+    <h3>WELCOME TO</h3>
+    <h2 data-text="lexinton city tourism sites">lexinton city tourism sites</h2>
+
+    <div class="data">
+        <a href="Homepage.html"><button>Go to Homepage</button></a>
+    </div>
+</body>
+</html>
