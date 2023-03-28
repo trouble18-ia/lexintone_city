@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gallery</title>
+	<style>
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+			grid-gap: 20px; 
+			align-items: center; 
+		}
+
+	
+		.gallery-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(orange, black, white);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			transition: all 0.3s ease-in-out;
+		}
+
+		.gallery-item:hover {
+			transform: scale(1.05); 
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+		}
+
+	
+		.gallery-item img {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+		.main{
+			background-image: url(bg11.jpg);
+			background-position: top;
+			background-repeat: none;
+		}
+		 .shine {
+		animation: shine 1s infinite;
+		font-size: 60px;
+		font-family: 'Times New Roman', Times, serif;
+		text-align: center;
+		
+		}
+
+		@keyframes shine {
+		0% {
+			color: orange;
+			text-shadow: 0 0 5px orange;
+		}
+		50% {
+			color: #fff;
+			text-shadow: 0 0 10px orange;
+		}
+		100% {
+			color: orange;
+			text-shadow: 0 0 5px orangered;
+		}
+        }
+	</style>
+</head>
+<body>
+	<div class="main">
+	<p class="shine">Welcome to our Gallery</p>
+	
+	<div class="gallery">
+		<div class="gallery-item">
+			<img src="cp.jpg" alt="camp">
+			<h3>camp</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="cp5.jpg" alt="camp">
+			<h3>camp</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="fr2.jpg" alt="forest">
+			<h3>forest</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="fr4.jpg" alt="forest">
+			<h3>forest</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="lk4.jpg" alt="lake">
+			<h3>lake</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="lk1.jpg" alt="lake">
+			<h3>lake</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="lk6.jpg" alt="lake">
+			<h3>lake</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="mt3.jpg" alt="mountain">
+			<h3>mountain</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="mt7.jpg" alt="mountain">
+			<h3>mountain</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="mt9.jpg" alt="mountain">
+			<h3>mountain</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678861369084.jpg" alt="mining">
+			<h3>mines</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678865734492.jpg" alt="mining">
+			<h3>mines</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678821301700.jpg" alt="mining">
+			<h3>museum</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678821710107.jpg" alt="musuem">
+			<h3>musuen</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678821750917.jpg" alt="museum">
+			<h3>musuem</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678821793965.jpg" alt="museum">
+			<h3>musuem</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678821815485.jpg" alt="museum">
+			<h3>musuem</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678871000397.jpg" alt="sport">
+			<h3>sport</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678871029159.jpg" alt="sport">
+			<h3>sport</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678953154161.jpg" alt="sport">
+			<h3>sport</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="1678953154161.jpg" alt="sport">
+			<h3>sport</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="ELEPHANT.jpg" alt="wildlife">
+			<h3>wildlife</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="LION1.jpg" alt="wildlife">
+			<h3>wildlife</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="rhyno3.jpg" alt="wildlife">
+			<h3>wildlife</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="snake 2.jpg" alt="wildlife">
+			<h3>wildlife</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="snake 3.jpg" alt="wildlife">
+			<h3>wildlife</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="TIGER1.jpg" alt="wildlife">
+			<h3>wildlife</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="zebra1.jpg" alt="wildlife">
+			<h3>wildlife</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="zebra3.jpg" alt="wildlife">
+			<h3>wildlife</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="bena.jpg" alt="wildlife">
+			<h3>depression</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="feri.jpg" alt="wildlife">
+			<h3>depression</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="hes.jpg" alt="wildlife">
+			<h3>depression</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="vale.jpg" alt="wildlife">
+			<h3>depression</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="wer.jpg" alt="wildlife">
+			<h3>depression</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="com.png" alt="wildlife">
+			<h3>volcano</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="joy.png" alt="wildlife">
+			<h3>volcano</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="mankey.png" alt="wildlife">
+			<h3>volcano</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="mum.png" alt="wildlife">
+			<h3>volcano</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="ja.jpg" alt="wildlife">
+			<h3>waterfall</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="bet.jpg" alt="wildlife">
+			<h3>waterfall</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="zone.jpg" alt="wildlife">
+			<h3>waterfall</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="oma.jpg" alt="wildlife">
+			<h3>waterfall</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="kwa.jpg" alt="wildlife">
+			<h3>waterfall</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="Array.jpg" alt="wildlife">
+			<h3>city</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="LO.jpg" alt="wildlife">
+			<h3>city</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="man.png" alt="wildlife">
+			<h3>city</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="like.png" alt="wildlife">
+			<h3>city</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="women.png" alt="wildlife">
+			<h3>city</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="kenya.png" alt="wildlife">
+			<h3>city</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="AK.png" alt="wildlife">
+			<h3>Beach</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="AC.png" alt="wildlife">
+			<h3>Beach</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="ZQ.png" alt="wildlife">
+			<h3>Beach</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="AJ.png" alt="wildlife">
+			<h3>Beach</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="BZ.png" alt="wildlife">
+			<h3>culture</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="HB.png" alt="wildlife">
+			<h3>culture</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="FK.png" alt="wildlife">
+			<h3>culture</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="jack.png" alt="wildlife">
+			<h3>Bouncing castle</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="KN.png" alt="wildlife">
+			<h3>Bouncing castle</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="LR.png" alt="wildlife">
+			<h3>Bouncing castle</h3>
+		</div>
+		<div class="gallery-item">
+			<img src="OR.png" alt="wildlife">
+			<h3>Bouncing castle</h3>
+		</div>
+		
+
+
+	</div>
+	</div>
+</body>
+</html>
