@@ -1,0 +1,290 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+        .hero{
+            width: 100%;
+            height: 100vh;
+            background-image: url(bg11.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden; 
+              
+          
+        }
+
+        .logo{
+            width: 250px;
+            cursor: pointer;
+            margin-top: 90px;
+
+        }
+
+        .navbar{
+            width: 85%;
+            height: 15%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .navbar2{
+            width: 100%;
+            height: 15vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        nav{
+            flex: 1;
+            padding-left: 60px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        nav ul{
+            flex: 1;
+            text-align: right;
+            padding-right: 30px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+            font-size: larger;
+            cursor: pointer;
+            list-style: none;
+
+        }
+
+        button{
+            color: #f2ece3;
+            padding: 10px 25px;
+            background: transparent;
+            border: 1px solid #e8e5e1;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background: orange;
+        }
+
+        .content{
+            color: #fbfcfd;
+            position: absolute;
+            top: 50%;
+            left: 1%;
+            transform: translateY(-50%);
+            z-index: 2;
+            margin-left: 30px;
+        }
+
+        h1{
+            font-size: 100px ;
+            font-family: sans-serif;
+            margin: 10px 0 30px;
+            line-height: 80px;
+            margin-top: 24px;
+            margin-bottom: 15px;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            background: url(logo5.png);
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            animation: back 20s linear infinite;
+            -webkit-animation-direction: alternate-reverse;
+
+        }
+
+        @keyframes back{
+            100%{
+                background-position: 2000px 0;
+            }
+        }
+
+        small{
+            font-size: 20px;
+        }
+        p{
+            font-family: ;
+        }
+        .side-bar{
+            width: 50px;
+            height: 100vh;
+            background: linear-gradient(orange, white, black, orange);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .menu{
+            display: block ;
+            width: 25px;
+            margin: 40px auto 0;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .social-links img, .useful-links img{
+            width: 25px;
+            margin: 5px auto;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        .social-links{
+            width: 50px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        .useful-links{
+            width: 50px;
+            text-align: center;
+            position: absolute;
+            bottom: 30px;
+            
+        }
+        .content{
+            margin-top: 80px;
+        }
+
+        .content .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        } 
+
+        .content a{
+            color: #c2760b;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 20px;
+            border: 2px solid #d57703;
+            display: flex;
+            align-items: center;  
+        }
+        .content a span{
+            font-size: 30px;
+            line-height: 15px;
+            margin-left: 5px;
+        }
+        .tour{
+            margin-top: 80px;
+            width: 150px;
+        }
+        small{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: gray;
+        }
+        .login{
+            margin-left:870px;
+        }
+        .login button{
+            background-color:gray;
+            
+        }
+        button:hover{
+            background-color: orange;
+        }
+       
+        p, h4{
+            font-family: Bradley Hand ITC;
+            color: antiquewhite;
+        }
+       
+        
+        </style>
+      
+    </head>
+    <body>
+        <div class="hero">
+            <div class="navbar">
+                <img src="city_logo1.png" class="logo">
+               
+                <div class="login"> 
+                    <a href="Login.html"><button type="button">Login</button></a>
+                    </div>
+                <a href="sign-up.html"><button type="button">Sign-Up</button></a>
+            </div>
+            <div class="navbar2">
+                <nav>
+                    <img src="" class="logo">
+                    <ul>
+                        <li><a href="Home.html"><button>&#x27f0 Home</button></a></li>
+                        <li><a href="Loader.html"><button>Heritage</button></a></li>
+                        <li><a href="Hotel Booking.html"><button>Hotel Booking</button></a></li>
+                        <li><a href="Gallery.html"><button>Gallery</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <small>Welcome to the</small>
+                <h1>LEXINTON CITY</h1>
+                <div class="tour">
+                <a href="Tour.html">Take a Tour</a>
+               </div> 
+               <br><br>
+               <h4>About Us :</h4>
+               <br>
+               <marquee direction="up" width="90%" scrolldelay="2500ms" height="40px"><p>Welcome to Visit Lexinton, the official tourism website for Abapanda's most iconic city! From stunning beaches and world-class dining to bustling markets and cultural landmarks, Lexinton is a destination like no other.
+
+                Our website provides a comprehensive guide to all that Lexinton has to offer, from the Opera House to Bondi Beach. On our homepage, you'll find a striking image of the city skyline, as well as quick links to popular attractions, events, and experiences.
+                
+                If you're looking to explore Lexinton's diverse neighborhoods, head to our "Tour" section. From the trendy streets of Surry Hills to the historic rocks of the city center, we've got all the insider tips to help you make the most of your visit.
+                
+                If you're a first-time visitor, our "Plan Your Trip" section is the perfect place to start. We've included information on transportation, accommodation, and dining options, as well as details on visas and passports for international visitors.
+                
+                For those looking for something more specific, our "Things to Do" section offers a wide range of activities and experiences, from harbor cruises and whale watching to fine dining and shopping. And if you're traveling with kids, don't miss our "Family Fun" section, which highlights the best family-friendly activities and attractions in the city.
+                
+                We're committed to making your trip to Lexinton unforgettable, so we've also included practical resources like maps, weather updates, and a calendar of upcoming events. And if you have any questions or feedback, our friendly team is always here to help.
+            
+                So why wait? Come and discover the wonders of Lexinton with us!</p></marquee> 
+
+                <div class="row">
+                    <a href="">Explore Our Website &#x21cA</a>
+                    <a href="">Connect With Us &#x27F6</a>
+                    <span>You Can Explore More About Our Website And Personal Life Experiences<br>On social media pages like facebook, twitter and instagram..</span>
+                </div>
+            </div>
+            <div class="side-bar">
+                <img src="menu.jpeg" class="menu">
+
+                <div class="social-links">
+                    <img src="fb.jpeg">
+                    <img src="ig1.jpeg">
+                    <img src="twitter1.jpeg">
+                </div>
+
+                <div class="useful-links">
+                    <img src="question.jpeg">
+                    <img src="share1.jpeg">
+                </div>
+            </div>
+        </div>
+        
+
+        
+    </body>
+    </html>
